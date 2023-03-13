@@ -1,6 +1,12 @@
 import os 
 import logging
 from pyrogram import Client
+from pyrogram import filters
+
+PREFIX = "."
+
+# Command Handler
+command = partial(filters.command, prefixes=PREFIX)
 
 print("[xl] Starting Deployment!")
 
